@@ -1,0 +1,192 @@
+body {
+
+	background-color: #ff5c33;
+
+}
+
+.hidden {
+    display: none;
+}
+
+img.logo
+{
+	position: absolute;
+	max-width: 80%;
+	top: 10%;
+	left: 10%;
+	width: 15%;
+}
+
+img.logo:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@media screen and (orientation: portrait) {
+  img.logo { max-width: 100%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.logo { max-height: 100%; }
+}
+
+
+div.container
+{
+	position: absolute;
+	padding: 5px;
+	max-width: 80%;
+	max-height: 80%;
+	top: 10%;
+	left: 20%;
+	width: 60%;
+	height: 80%;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: 0px 0px 14px 2px rgba(0,0,0,0.5);
+	overflow: auto;
+	
+}
+
+div.container:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.eventHeaderImage img {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.eventDescription {
+
+	padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.eventDescription h4 {
+	font-family: 'Baloo Bhaina', cursive;
+	font-size: 22px;
+	margin: 5px;
+}
+
+.eventDescription p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	padding: 10px;
+	margin: 2px;
+}
+
+
+.eventMedia {
+
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.eventMedia h4 {
+
+	font-family: 'Baloo Bhaina', cursive;
+	font-size: 22px;
+	margin: 5px;
+
+}
+
+.eventMediaImages img {
+	max-width: 80%;
+	max-height: auto;
+	margin-bottom: 15px;
+	border-radius: 6px;
+}
+
+.shareButtons {
+
+	text-align: center;
+}
+
+.nextButton {
+	
+	text-align: center;
+	padding: 10px;
+
+}
+
+.btn { 
+  color: #FFFFFF; 
+  background-color: #000000; 
+  border-color: #000000;
+  font-family: 'Baloo Bhaina', cursive;
+} 
+ 
+.btn:hover, 
+.btn:focus, 
+.btn:active, 
+.btn.active, 
+.open .dropdown-toggle.btn { 
+  color: #FFFFFF; 
+  background-color: #636363; 
+  border-color: #000000; 
+} 
+ 
+.btn:active, 
+.btn.active, 
+.open .dropdown-toggle.btn { 
+  background-image: none; 
+} 
+ 
+.btn.disabled, 
+.btn[disabled], 
+fieldset[disabled] .btn, 
+.btn.disabled:hover, 
+.btn[disabled]:hover, 
+fieldset[disabled] .btn:hover, 
+.btn.disabled:focus, 
+.btn[disabled]:focus, 
+fieldset[disabled] .btn:focus, 
+.btn.disabled:active, 
+.btn[disabled]:active, 
+fieldset[disabled] .btn:active, 
+.btn.disabled.active, 
+.btn[disabled].active, 
+fieldset[disabled] .btn.active { 
+  background-color: #000000; 
+  border-color: #000000; 
+} 
+ 
+.btn .badge { 
+  color: #000000; 
+  background-color: #FFFFFF; 
+}
+
+
+@media screen and (orientation: portrait) {
+  div.container { max-width: 100%; }
+  .eventDescription { max-width: 100%; }
+  .eventMedia { max-width: 100%; }
+  
+}
+
+@media screen and (orientation: landscape) {
+  div.container { max-height: 100%; }
+  .eventDescription { max-height: 100%; }
+  .eventMedia { max-height: 100%; }
+  
+}

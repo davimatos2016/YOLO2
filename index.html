@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YOLO Results</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylerandom.css" />
+</head>
+
+<body>
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+
+    
+    <!-- Logo -->
+
+    <img class="logo" src="assets/images/yolo.png">
+
+    <!-- Container Div -->
+    <div class="container hidden yolo-overlay">
+        <!-- Header Image -->
+        <div class="row">
+            <div class="col-md-12">
+                <span class="eventHeaderImage">
+  
+                </span>
+            </div>
+        </div>
+        <!-- Description and Media -->
+        <div class="row eventInfo">
+            <div class="col-md-8 eventDescription">
+                <h4 class='event-header'>Event Header</h4>
+                <p class='event-info'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia cor magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+            </div>
+            <div class="col-md-4 eventMedia">
+                <h4>Event Media</h4>
+                <span class="eventMediaImages">
+                <img src="assets/images/seaworld.jpg">
+                <img src="assets/images/universal.jpg">
+                <img src="assets/images/universal.jpg">
+                </span>
+            </div>
+        </div>
+        <!-- Buttons -->
+        <div class="row">
+            <div class="col-md-8 shareButtons">
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Subscribe to YOLO</button>
+            </div>
+            <div class="col-md-4 nextButton">
+                <button type="button" class="btn btn-default" id="next-button">Next Event</button>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Modal -->
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Subscribe to YOLO</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+    <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input class="form-control" id="firstName" placeholder="First Name">
+  </div>
+
+    <div class="form-group">
+    <label for="lastName">Last Name</label>
+    <input class="form-control" id="lastName" placeholder="Last Name">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email Address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" id="subscribe">Subscribe</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    <script src="assets/js/javascript.js"></script>
+
+</body>
+
+</html>
