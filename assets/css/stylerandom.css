@@ -17,6 +17,10 @@ img.logo
 	width: 15%;
 }
 
+img.logo:hover {
+	opacity: .5;
+}
+
 img.logo:empty
 {
 	top: 50%;
